@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+}
+
+img {
+    width: 500px;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    background-color: #CCFFFF;
+}
