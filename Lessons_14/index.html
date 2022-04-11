@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Группы</title>
+</head>
+<body>
+<button type ="button" name="button" onclick="add_to_group ()">Группировать</button>
+<script>
+	function getRandomInt(max) {
+  		return Math.floor(Math.random() * max);
+    }
+
+	let members = ['Aaron R. Wylie','Brenda J. Robinson', 'Malissa D. Bowman', 
+                   	'Frank E. Jones', 'Daniel M. Truesdale', 'Barbara T. Stilwell', 
+                   	'Katherine E. Kuykendall', 'Tyrone M. Duran', 'Blake T. Roselli', 
+                   	'Benjamin C. Provost', 'Shannon P. McLaughlin','Robert A. Truesdale', 
+                   	'Charlotte C. Hammond', 'Kristi N. Kincannon'];
+
+	let gorup1 = [];
+	let gorup2 = [];
+
+	function add_to_group () {
+		let index = getRandomInt(members.length - 1);
+		gorup1.push(members[index]);
+		members.splice(index, 1);
+		console.log(members);
+	}
+
+	add_to_group ();
+
+	console.log(gorup1, gorup2);
+
+</script>
+</body>
+</html>
