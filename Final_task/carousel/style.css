@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    width: 550px;
+}
+
+img {
+    width: 550px;
+}
+
+button {
+    border: none;
+    background-color: #CCFFFF;
+}
+
+button:hover {
+    background-color: #48D1CC;
+}
